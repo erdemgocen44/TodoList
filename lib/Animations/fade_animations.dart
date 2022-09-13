@@ -22,6 +22,16 @@ class FadeAnimation extends StatelessWidget {
       duration: tween.duration,
       tween: tween,
       child: child,
+      builder: (context, child, value) => Opacity(
+        opacity: value.get(AniProps.opacity),
+        child: Transform.translate(
+          offset: Offset(
+            0,
+            value.get(AniProps.translateY),
+          ),
+          child: child,
+        ),
+      ),
     );
   }
 }
