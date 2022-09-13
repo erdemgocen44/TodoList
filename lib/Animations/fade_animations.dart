@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:simple_animations/simple_animations.dart';
 import 'package:supercharged/supercharged.dart';
+import 'package:simple_animations/simple_animations.dart';
 
 enum AniProps { opacity, translateY }
 
@@ -17,8 +17,11 @@ class FadeAnimation extends StatelessWidget {
       ..add(AniProps.translateY, (-30.0).tweenTo(0.0), 500.milliseconds,
           Curves.easeOut);
 
-   return PlayAnimation<MultiTweenValues<AniProps>>(
-    delay:Duration(milliseconds: (500*delay).round()),
-   )
+    return PlayAnimation<MultiTweenValues<AniProps>>(
+      delay: Duration(milliseconds: (500 * delay).round()),
+      duration: tween.duration,
+      tween: tween,
+      child: child,
+    );
   }
 }
