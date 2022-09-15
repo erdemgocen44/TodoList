@@ -7,10 +7,10 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Todo List'),
+        title: const Text('Todo List'),
       ),
       body: Container(
-        child: Text('This is home screen'),
+        child: const Text('This is home screen'),
       ),
     );
   }
