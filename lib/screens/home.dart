@@ -15,7 +15,7 @@ class Home extends StatelessWidget {
               Icons.menu,
               color: tdBlack,
               size: 30,
-            ),Container(child: ,)
+            ),Container(height: 40,width: 40, child:ClipRRect(child: Image.asset('assets/images/avatar.png'),) ,)
           ],
         ),
       ),
