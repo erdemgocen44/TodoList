@@ -10,12 +10,20 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: tdBGColor,
         title: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Icon(
               Icons.menu,
               color: tdBlack,
               size: 30,
-            ),Container(height: 40,width: 40, child:ClipRRect(child: Image.asset('assets/images/avatar.png'),) ,)
+            ),
+            Container(
+              height: 40,
+              width: 40,
+              child: ClipRRect(
+                child: Image.asset('assets/images/avatar.png'),
+              ),
+            )
           ],
         ),
       ),
