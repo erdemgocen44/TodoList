@@ -8,6 +8,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 0,
         backgroundColor: tdBGColor,
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -18,8 +19,8 @@ class Home extends StatelessWidget {
               size: 30,
             ),
             Container(
-              height: 40,
-              width: 40,
+              height: MediaQuery.of(context).size.height * 0.07,
+              width: MediaQuery.of(context).size.width * 0.07,
               child: ClipRRect(
                 child: Image.asset('assets/images/avatar.png'),
               ),
