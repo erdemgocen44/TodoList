@@ -13,7 +13,7 @@ class Home extends StatelessWidget {
         padding: EdgeInsets.symmetric(horizontal: 15),
         child: Column(
           children: [
-            Container(
+            Container(padding: EdgeInsets.symmetric(),
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(20),
@@ -28,7 +28,7 @@ class Home extends StatelessWidget {
                   ),
                   prefixIconConstraints:
                       BoxConstraints(maxHeight: 20, minWidth: 25),
-                border: InputBorder.none,hintText: 'Search',hintStyle: ),
+                border: InputBorder.none,hintText: 'Search',hintStyle:TextStyle(color:tdGrey ),
               ),
             ),
           ],
