@@ -10,6 +10,7 @@ class Home extends StatelessWidget {
       backgroundColor: tdBGColor,
       appBar: _buildAppBar(context),
       body: Container(
+        padding: EdgeInsets.symmetric(horizontal: 15),
         child: Column(
           children: [
             Container(
@@ -17,7 +18,11 @@ class Home extends StatelessWidget {
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(20),
               ),
-              child: TextField(),
+              child: TextField(
+                decoration: InputDecoration(
+                  contentPadding: EdgeInsets.all(0),
+                ),
+              ),
             ),
           ],
         ),
