@@ -10,7 +10,7 @@ class Home extends StatelessWidget {
       backgroundColor: tdBGColor,
       appBar: _buildAppBar(context),
       body: Container(
-        child: const Text('This is home screen'),
+        child: Column(),
       ),
     );
   }
