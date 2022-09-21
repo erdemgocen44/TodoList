@@ -20,8 +20,12 @@ class Home extends StatelessWidget {
               ),
               child: TextField(
                 decoration: InputDecoration(
-                  contentPadding: EdgeInsets.all(0),
-                ),
+                    contentPadding: EdgeInsets.all(0),
+                    prefixIcon: Icon(
+                      Icons.search,
+                      color: tdBlack,
+                      size: 20,
+                    )),
               ),
             ),
           ],
