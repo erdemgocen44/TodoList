@@ -11,7 +11,13 @@ class _TodoItemsState extends State<TodoItems> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Text('ToDo Items'),
+      child: ListTile(
+        onTap: () {},
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(20),
+        ),
+        tileColor: Colors.white,
+      ),
     );
   }
 }
