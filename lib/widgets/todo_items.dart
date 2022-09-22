@@ -19,9 +19,7 @@ class _TodoItemsState extends State<TodoItems> {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20),
         ),
-        contentPadding: EdgeInsets.symmetric(
-          horizontal: 20,
-        ),
+        contentPadding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
         tileColor: Colors.white,
         leading: Icon(
           Icons.check_box,
@@ -45,7 +43,10 @@ class _TodoItemsState extends State<TodoItems> {
           ),
           child: IconButton(
             onPressed: () {},
-            icon: Icon(Icons.delete),
+            icon: Icon(
+              Icons.delete,
+              color: Colors.white,
+            ),
             iconSize: 18,
           ),
         ),
