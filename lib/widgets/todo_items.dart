@@ -19,6 +19,9 @@ class _TodoItemsState extends State<TodoItems> {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20),
         ),
+        contentPadding: EdgeInsets.symmetric(
+          horizontal: 20,
+        ),
         tileColor: Colors.white,
         leading: Icon(
           Icons.check_box,
