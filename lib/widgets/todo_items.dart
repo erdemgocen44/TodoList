@@ -30,8 +30,20 @@ class _TodoItemsState extends State<TodoItems> {
               fontSize: 16,
               color: tdBlack,
               decoration: TextDecoration.lineThrough),
-        ),trailing: Container(height:35,width: 35 ,
-          child: ,),
+        ),
+        trailing: Container(
+          height: 35,
+          width: 35,
+          decoration: BoxDecoration(
+            color: tdRed,
+            borderRadius: BorderRadius.circular(5),
+          ),
+          child: IconButton(
+            onPressed: () {},
+            icon: Icon(Icons.delete),
+            iconSize: 18,
+          ),
+        ),
       ),
     );
   }
