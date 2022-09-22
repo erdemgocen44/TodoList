@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import '../constants/color.dart';
 
@@ -22,6 +24,14 @@ class _TodoItemsState extends State<TodoItems> {
           Icons.check_box,
           color: tdBlue,
         ),
+        title: Text(
+          'Check Mail',
+          style: TextStyle(
+              fontSize: 16,
+              color: tdBlack,
+              decoration: TextDecoration.lineThrough),
+        ),trailing: Container(height:35,width: 35 ,
+          child: ,),
       ),
     );
   }
