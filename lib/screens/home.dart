@@ -15,7 +15,7 @@ class Home extends StatelessWidget {
           children: [
             searchBox(),
             ListView(
-              children: [Container()],
+              children: [Container(child: ,)],
             ),
           ],
         ),
