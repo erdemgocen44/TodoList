@@ -15,7 +15,17 @@ class Home extends StatelessWidget {
           children: [
             searchBox(),
             ListView(
-              children: [Container(child: ,)],
+              children: [
+                Container(
+                  margin: EdgeInsets.only(top: 50, bottom: 20),
+                  child: Text(
+                    'All ToDos',
+                    style: TextStyle(
+                      fontSize: 30,
+                    ),
+                  ),
+                )
+              ],
             ),
           ],
         ),
