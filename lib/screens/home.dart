@@ -14,16 +14,21 @@ class Home extends StatelessWidget {
         child: Column(
           children: [
             searchBox(),
-            ListView(
-              children: [
-                Container(
-                  margin: EdgeInsets.only(top: 50, bottom: 20),
-                  child: Text(
-                    'All ToDos',
-                    style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-                  ),
-                )
-              ],
+            Expanded(
+              child: ListView(
+                children: [
+                  Container(
+                    margin: EdgeInsets.only(top: 50, bottom: 20),
+                    child: Text(
+                      'All ToDos',
+                      style: TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                  )
+                ],
+              ),
             ),
           ],
         ),
