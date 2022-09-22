@@ -20,9 +20,7 @@ class Home extends StatelessWidget {
                   margin: EdgeInsets.only(top: 50, bottom: 20),
                   child: Text(
                     'All ToDos',
-                    style: TextStyle(
-                      fontSize: 30,
-                    ),
+                    style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                   ),
                 )
               ],
