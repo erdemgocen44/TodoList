@@ -15,7 +15,9 @@ class _TodoItemsState extends State<TodoItems> {
   Widget build(BuildContext context) {
     return Container(
       child: ListTile(
-        onTap: () {},
+        onTap: () {
+          print('Clik Todo');
+        },
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20),
         ),
@@ -42,7 +44,9 @@ class _TodoItemsState extends State<TodoItems> {
             borderRadius: BorderRadius.circular(5),
           ),
           child: IconButton(
-            onPressed: () {},
+            onPressed: () {
+              print('Delete Clic');
+            },
             icon: Icon(
               Icons.delete,
               color: Colors.white,

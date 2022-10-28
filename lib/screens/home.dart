@@ -28,7 +28,11 @@ class Home extends StatelessWidget {
                       ),
                     ),
                   ),
-                  TodoItems()
+                  TodoItems(),
+                  TodoItems(),
+                  TodoItems(),
+                  TodoItems(),
+                  TodoItems(),
                 ],
               ),
             ),
