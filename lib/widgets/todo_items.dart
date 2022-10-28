@@ -14,6 +14,7 @@ class _TodoItemsState extends State<TodoItems> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: EdgeInsets.only(bottom: 20),
       child: ListTile(
         onTap: () {
           print('Clik Todo');
