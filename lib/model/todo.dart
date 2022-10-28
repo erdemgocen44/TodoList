@@ -8,6 +8,11 @@ class ToDo {
   static List<ToDo> toDoList() {
     return [
       ToDo(id: '01', toDoText: 'Matin Excercise', isDone: true),
+      ToDo(id: '02', toDoText: 'Apres Midi Excercise', isDone: true),
+      ToDo(id: '03', toDoText: 'Soir Excercise'),
+      ToDo(id: '04', toDoText: 'Week-End Excercise'),
+      ToDo(id: '05', toDoText: 'Samedi Excercise'),
+      ToDo(id: '06', toDoText: 'Dimance Excercise'),
     ];
   }
 }
