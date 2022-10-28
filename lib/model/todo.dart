@@ -3,9 +3,11 @@ class ToDo {
   String? id;
   String? toDoText;
   bool isDone;
-  ToDo({
-    this.id,
-    this.toDoText,
-    required this.isDone,
-  });
+  ToDo({required this.id, required this.toDoText, this.isDone = false});
+
+  static List<ToDo> toDoList() {
+    return [
+      ToDo(id: '01', toDoText: 'Matin Excercise', isDone: true),
+    ];
+  }
 }
