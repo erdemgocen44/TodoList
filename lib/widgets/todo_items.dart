@@ -4,9 +4,8 @@ import '../constants/color.dart';
 import '../model/todo.dart';
 
 class TodoItems extends StatefulWidget {
-
-  final ToDo toDo;
-  const TodoItems({Key? key, required this.toDo}) : super(key: key);
+  final ToDo todo;
+  const TodoItems({Key? key, required this.todo}) : super(key: key);
 
   @override
   State<TodoItems> createState() => _TodoItemsState();
@@ -27,15 +26,17 @@ class _TodoItemsState extends State<TodoItems> {
         contentPadding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
         tileColor: Colors.white,
         leading: Icon(
-        toDo.isDone?  Icons.check_box:Icons.check_box_outline_blank_outlined,
+          todo.isDone
+              ? Icons.check_box
+              : Icons.check_box_outline_blank_outlined,
           color: tdBlue,
         ),
         title: Text(
-          toDo.toDoText!,
+          todo.toDoText!,
           style: TextStyle(
               fontSize: 16,
               color: tdBlack,
-              decoration: toDo.isDone?  TextDecoration.lineThrough:null),
+              decoration: todo.isDone ? TextDecoration.lineThrough : null),
         ),
         trailing: Container(
           padding: EdgeInsets.all(0),
