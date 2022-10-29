@@ -27,7 +27,7 @@ class _TodoItemsState extends State<TodoItems> {
         contentPadding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
         tileColor: Colors.white,
         leading: Icon(
-          Icons.check_box,
+        toDo.isDone?  Icons.check_box:Icons.check_box_outline_blank_outlined,
           color: tdBlue,
         ),
         title: Text(
