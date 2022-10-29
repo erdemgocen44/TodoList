@@ -2,9 +2,12 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import '../constants/color.dart';
+import '../model/todo.dart';
 
 class TodoItems extends StatefulWidget {
-  const TodoItems({Key? key}) : super(key: key);
+  final ToDo toDo;
+
+  const TodoItems({Key? key, required this.toDo}) : super(key: key);
 
   @override
   State<TodoItems> createState() => _TodoItemsState();
