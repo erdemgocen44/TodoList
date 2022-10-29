@@ -1,12 +1,11 @@
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import '../constants/color.dart';
 import '../model/todo.dart';
 
 class TodoItems extends StatefulWidget {
-  final ToDo toDo;
 
+  final ToDo toDo;
   const TodoItems({Key? key, required this.toDo}) : super(key: key);
 
   @override
@@ -32,11 +31,11 @@ class _TodoItemsState extends State<TodoItems> {
           color: tdBlue,
         ),
         title: Text(
-          'Check Mail',
+          toDo.toDoText!,
           style: TextStyle(
               fontSize: 16,
               color: tdBlack,
-              decoration: TextDecoration.lineThrough),
+              decoration: toDo.isDone?  TextDecoration.lineThrough:null),
         ),
         trailing: Container(
           padding: EdgeInsets.all(0),
