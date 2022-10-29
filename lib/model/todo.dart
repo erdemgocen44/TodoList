@@ -5,7 +5,7 @@ class ToDo {
   bool isDone;
   ToDo({required this.id, required this.todoText, this.isDone = false});
 
-  static List<ToDo> todoList() {
+  static List<ToDo> todosList() {
     return [
       ToDo(id: '01', todoText: 'Matin Excercise', isDone: true),
       ToDo(id: '02', todoText: 'Apres Midi Excercise', isDone: true),

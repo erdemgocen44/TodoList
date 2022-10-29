@@ -6,7 +6,7 @@ import '../widgets/todo_items.dart';
 class Home extends StatelessWidget {
   Home({Key? key}) : super(key: key);
 
-  final toDoList = ToDo.todoList();
+  final toDoList = ToDo.todosList();
 
   @override
   Widget build(BuildContext context) {
@@ -31,9 +31,9 @@ class Home extends StatelessWidget {
                       ),
                     ),
                   ),
-                  for (ToDo toDoo in toDoList)
-                    TodoItems(
-                      todo: toDoo,
+                  for (ToDo todoo in toDoList)
+                    ToDoItem(
+                      todo: todoo,
                     ),
                 ],
               ),

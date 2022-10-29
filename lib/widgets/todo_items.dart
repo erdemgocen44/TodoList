@@ -3,15 +3,15 @@ import 'package:flutter/material.dart';
 import '../constants/color.dart';
 import '../model/todo.dart';
 
-class TodoItems extends StatefulWidget {
+class ToDoItem extends StatefulWidget {
   final ToDo todo;
-  const TodoItems({Key? key, required this.todo}) : super(key: key);
+  const ToDoItem({Key? key, required this.todo}) : super(key: key);
 
   @override
-  State<TodoItems> createState() => _TodoItemsState();
+  State<ToDoItem> createState() => _ToDoItemState();
 }
 
-class _TodoItemsState extends State<TodoItems> {
+class _ToDoItemState extends State<ToDoItem> {
   @override
   Widget build(BuildContext context) {
     return Container(
