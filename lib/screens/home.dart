@@ -48,12 +48,21 @@ class Home extends StatelessWidget {
             child: Row(
               children: [
                 Expanded(
-                    child: Container(
-                  margin: EdgeInsets.only(bottom: 20, right: 20, left: 20),
-                ))
+                  child: Container(
+                    margin: EdgeInsets.only(bottom: 20, right: 20, left: 20),
+                    decoration:
+                        BoxDecoration(color: Colors.white, boxShadow: const [
+                      BoxShadow(
+                          color: Colors.grey,
+                          offset: Offset(0.0, 0.0),
+                          blurRadius: 10.0,
+                          spreadRadius: 0.0),
+                    ]),
+                  ),
+                ),
               ],
             ),
-          )
+          ),
         ],
       ),
     );
