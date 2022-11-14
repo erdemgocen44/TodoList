@@ -13,7 +13,7 @@ class Home extends StatelessWidget {
     return Scaffold(
       backgroundColor: tdBGColor,
       appBar: _buildAppBar(context),
-      body: Column(
+      body: Stack(
         children: [
           Container(
             padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
@@ -43,6 +43,17 @@ class Home extends StatelessWidget {
               ],
             ),
           ),
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Row(
+              children: [
+                Expanded(
+                    child: Container(
+                  margin: EdgeInsets.only(bottom: 20, right: 20, left: 20),
+                ))
+              ],
+            ),
+          )
         ],
       ),
     );
