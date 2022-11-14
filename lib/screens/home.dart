@@ -61,6 +61,11 @@ class Home extends StatelessWidget {
                       ],
                       borderRadius: BorderRadius.circular(10),
                     ),
+                    child: TextField(
+                      decoration: InputDecoration(
+                          hintText: 'Add a new todo item svp',
+                          border: InputBorder.none),
+                    ),
                   ),
                 ),
               ],
