@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../model/todo.dart';
 import '../constants/color.dart';
 import '../widgets/todo_items.dart';
